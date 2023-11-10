@@ -1,0 +1,33 @@
+---
+title: "Demo 1"
+format: html
+editor: visual
+---
+
+## Main document
+
+###Stichin' together modular reports in quarto.
+
+A really nice way to be able to collaborate and build things on completely separate data sets.
+
+Of course there may be shared functions, but perhaps these could also be put into a separate file.
+
+So this is all the main document.  
+
+We then call a version of the basic quarto report.  All I have done is remove the YAML header.
+
+{{< include rpt2.qmd >}}
+
+After that report I can still use standard code chunks.
+```{r}
+#| echo: true
+2 + 2
+```
+
+And here I call another section of a report.
+
+{{< include rpt3.qmd >}}
+
+This method is great for building modular reports 
+
+
